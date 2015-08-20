@@ -5,7 +5,7 @@ Date: 2015-08-20
 Version: 0.1.0
 Authors@R: person("Sebastian", "Engelmann", email = "s.engelmann@fu-berlin.dem", role = c("aut", "cre"))
 Description: More about what it does (maybe more than one line)
-License: GPL-3 | file LICENSE
+License: MIT | file LICENSE
 LazyData: TRUE
 Suggests: testthat
 Depends: R(>= 2.10.0)
