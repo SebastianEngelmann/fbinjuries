@@ -1,0 +1,18 @@
+#' data set fbinjuries
+#'
+#'
+#'
+#' @format  A data frame with 7092 rows and 9 variables:
+#' \describe{
+#'    \item{leaguename}{name of the football league}
+#'    \item{teamname}{name of the team}
+#'    \item{playername}{name of the player}
+#'    \item{pos}{position of the player}
+#'    \item{injname}{name of the injury}
+#'    \item{saison}{saison}
+#'    \item{startdate}{startdate of the injury}
+#'    \item{enddate}{enddate of the injury}
+#'    \item{days}{sick days}}
+#'
+#' @source \url{https://fussballverletzungen.wordpress.com}
+"fbinjuries"

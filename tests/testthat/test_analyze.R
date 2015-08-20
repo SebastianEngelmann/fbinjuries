@@ -1,0 +1,11 @@
+test_that("analyze_correctness", {
+  days <- sample(x = 1:300, size = 500, replace = TRUE)
+  injname <- rep(x = "depression", 500)
+  data <- data.frame(injname, days)
+  result <- summary(data$days)
+  expect_that(analyze(injury = "depression", data = data)[[1]], equals(result[[1]], tolerance = 0.5))
+  expect_that(analyze(injury = "depression", data = data)[[2]], equals(result[[2]], tolerance = 0.5))
+  expect_that(analyze(injury = "depression", data = data)[[3]], equals(result[[3]], tolerance = 0.5))
+  expect_that(analyze(injury = "depression", data = data)[[4]], equals(result[[4]], tolerance = 0.5))
+  expect_that(analyze(injury = "depression", data = data)[[5]], equals(result[[5]], tolerance = 0.5))
+})
