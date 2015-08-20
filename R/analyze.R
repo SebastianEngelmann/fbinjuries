@@ -11,7 +11,7 @@ analyze <- function(injury, data){
   x <- na.omit(x)
   ldays <- length(x$days)
 
-  fit <- fitlnorm(x$days)
+  fitln <- fitlnorm(x$days)
 
   mini <- min(x$days)
   maxi <- max(x$days)
@@ -34,9 +34,6 @@ analyze <- function(injury, data){
     tq <- x$days[ceiling(ldays * 0.75)]
   }
 
-  #result <- c(mini, fq, med, mu, tq, maxi)
-  #result <- round(result, 2)
-  #names(result) <- c("Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.")
   output <- list(
     "Minimum" = mini,
     "firstQuartile" = fq,
@@ -46,7 +43,7 @@ analyze <- function(injury, data){
     "Maximum" = maxi,
     "numberOfObservation" = ldays,
     "data" = x,
-    "fit" = fit,
+    "fitlognormal" = fitln,
     "injury" = x$injname
   )
   class(output) <- "fbinjuries"

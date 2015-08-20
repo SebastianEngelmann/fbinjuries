@@ -4,12 +4,13 @@
 #' \code{position = "AW"} (defense);
 #' \code{position = "MF"} (midfield);
 #' \code{position = "ST"} (attack)
-#' @param sickdays the number of maximal sickdays in the past
+#' @param minsickdays the number of minimal sickdays in the past
+#' @param maxsickdays the number of maximal sickdays in the past
 #' @param data data.frame which contains the data of fbinjuries
 #' @rdname fplayer
 #' @export
 
-fplayer <- function(position, sickdays, data){
-  x <- dplyr::filter(dplyr::group_by(data, playerid), pos == position & sum(days, na.rm = TRUE) <= sickdays)
+fplayer <- function(position, minsickdays, maxsickdays, data){
+  x <- dplyr::filter(dplyr::group_by(data, playername), pos == position & sum(days, na.rm = TRUE) >= minsickdays & sum(days, na.rm = TRUE) <= maxsickdays)
   x$playername[!duplicated(x$playername)]
 }

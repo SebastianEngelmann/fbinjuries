@@ -4,7 +4,7 @@
 \alias{fplayer}
 \title{Find players who can play a special position...}
 \usage{
-fplayer(position, sickdays, data)
+fplayer(position, minsickdays, maxsickdays, data)
 }
 \arguments{
 \item{position}{player position; \code{position = "TW"} (goalkeeper);
@@ -12,7 +12,9 @@ fplayer(position, sickdays, data)
 \code{position = "MF"} (midfield);
 \code{position = "ST"} (attack)}
 
-\item{sickdays}{the number of maximal sickdays in the past}
+\item{minsickdays}{the number of minimal sickdays in the past}
+
+\item{maxsickdays}{the number of maximal sickdays in the past}
 
 \item{data}{data.frame which contains the data of fbinjuries}
 }

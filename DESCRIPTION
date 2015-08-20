@@ -1,11 +1,10 @@
 Package: fbinjuries
 Type: Package
 Title: football injuries
-Date: Sys.Date()
 Version: 0.1.0
-Authors@R: person("Sebastian", "Engelmann", email = "s.engelmann@fu-berlin.dem", role = c("aut", "cre"))
+Authors@R: person("Sebastian", "Engelmann", email = "s.engelmann@fu-berlin.de", role = c("aut", "cre"))
 BugReports: https://github.com/SebastianEngelmann/fbinjuries/issues
-Description: More about what it does (maybe more than one line)
+Description: "fbinjuries is a collection of functions designed to analyze football injuries."
 License: MIT + file LICENSE
 LazyData: TRUE
 Suggests: testthat
