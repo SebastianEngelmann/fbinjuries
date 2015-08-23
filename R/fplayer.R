@@ -11,6 +11,11 @@
 #' @export
 
 fplayer <- function(position, minsickdays, maxsickdays, data){
+
+  playername <- NULL
+  pos <- NULL
+  days <- NULL
+
   x <- dplyr::filter(dplyr::group_by(data, playername), pos == position & sum(days, na.rm = TRUE) >= minsickdays & sum(days, na.rm = TRUE) <= maxsickdays)
   x$playername[!duplicated(x$playername)]
 }
