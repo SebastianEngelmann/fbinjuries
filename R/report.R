@@ -7,6 +7,11 @@
 #' @export
 
 report <- function(name, data){
+
+  playername <- NULL
+  startdate <- NULL
+  injname <- NULL
+
   x <- dplyr::arrange(dplyr::filter(data, playername == name), dplyr::desc(startdate))
   options(dplyr.print_max = 100)
   player <- x$playername[!duplicated(x$playername)]

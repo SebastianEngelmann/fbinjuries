@@ -7,6 +7,10 @@
 #' @export
 
 analyze <- function(injury, data){
+
+  injname <- NULL
+  days <- NULL
+
   x <- dplyr::arrange(dplyr::filter(data, injname == injury), days)
   x <- na.omit(x)
   ldays <- length(x$days)
