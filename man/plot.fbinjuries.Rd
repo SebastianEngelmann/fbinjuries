@@ -9,7 +9,7 @@
 \arguments{
 \item{x}{an object of class "fbinjuries"}
 
-\item{...}{...}
+\item{...}{Arguments to be passed to or from other methods}
 }
 \description{
 Plot-Method for an object of class "fbinjuries"
