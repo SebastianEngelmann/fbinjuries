@@ -3,6 +3,25 @@
 #' @param injury Kind of injury
 #' @param data data.frame which contains the data of fbinjuries
 #' @return analyze returns an object of class "fbinjuries". This object contains data of sick days caused by injury.
+#'
+#' \code{Minimum} minimum sick days caused by injury
+#'
+#' \code{firstQuartile} 0.25-quantile of sick days caused by injury
+#'
+#' \code{Median} median of sick days caused by injury
+#'
+#' \code{Mean} mean sick days caused by injury
+#'
+#' \code{thirdQuartile} 0.75-quantile of sick days caused by injury
+#'
+#' \code{Maximum} maximum sick days caused by injury
+#'
+#' \code{numberOfObservation} number of injury
+#'
+#' \code{data} subset of data.frame
+#'
+#' \code{injury} name of injury
+#'
 #' @rdname analyze
 #' @export
 #' @examples
