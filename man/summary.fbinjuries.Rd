@@ -2,16 +2,16 @@
 % Please edit documentation in R/summary_fbinjuries.R
 \name{summary.fbinjuries}
 \alias{summary.fbinjuries}
-\title{Summary-Method for an object of class "fbinjuries"}
+\title{Summarize an object of class "fbinjuries"}
 \usage{
-\method{summary}{fbinjuries}(x, ...)
+\method{summary}{fbinjuries}(object, ...)
 }
 \arguments{
-\item{x}{an object of class "fbinjuries"}
+\item{object}{Object of class "fbinjuries"}
 
-\item{...}{...}
+\item{...}{Arguments to be passed to or from other methods}
 }
 \description{
-Summary-Method for an object of class "fbinjuries"
+Summarize an object of class "fbinjuries"
 }
 
