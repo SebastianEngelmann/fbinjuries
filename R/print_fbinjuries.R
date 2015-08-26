@@ -1,7 +1,7 @@
 #' Print-Method for an object of class "fbinjuries"
 #'
 #' @param x an object of class "fbinjuries"
-#' @param ... ...
+#' @param ... Arguments to be passed to or from other methods
 #' @return print information
 #' @rdname print.fbinjuries
 #' @export
