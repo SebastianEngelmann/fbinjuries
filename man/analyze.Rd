@@ -2,19 +2,23 @@
 % Please edit documentation in R/analyze.R
 \name{analyze}
 \alias{analyze}
-\title{Analyse of a injury}
+\title{Analysis of football injuries}
 \usage{
 analyze(injury, data)
 }
 \arguments{
-\item{injury}{injury of interest}
+\item{injury}{Kind of injury}
 
 \item{data}{data.frame which contains the data of fbinjuries}
 }
 \value{
-summary of sickdays caused by injury
+analyze returns an object of class "fbinjuries". This object contains data of sick days caused by injury.
 }
 \description{
-Analyse of a injury
+Analysis of football injuries
+}
+\examples{
+data(fbinjuries)
+analyze(injury = "Kreuzbandriss", data = fbinjuries)
 }
 
