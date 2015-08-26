@@ -2,7 +2,7 @@
 % Please edit documentation in R/analyze.R
 \name{analyze}
 \alias{analyze}
-\title{Analysis of football injuries}
+\title{Analysis of sick days caused by football injuries}
 \usage{
 analyze(injury, data)
 }
@@ -15,7 +15,7 @@ analyze(injury, data)
 analyze returns an object of class "fbinjuries". This object contains data of sick days caused by injury.
 }
 \description{
-Analysis of football injuries
+Analysis of sick days caused by football injuries
 }
 \examples{
 data(fbinjuries)
