@@ -18,7 +18,7 @@
 #'
 #' \code{numberOfObservation} number of injury
 #'
-#' \code{data} subset of data.frame
+#' \code{data} subset of data.frame containing data from fbinjuries
 #'
 #' \code{injury} name of injury
 #'
