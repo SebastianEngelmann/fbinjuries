@@ -28,7 +28,6 @@ mkfile <- function(x, filename, setdir){
   cat("###########################################\n\n\n")
   print(x)
   sink()
-  system("say -v Kathy File successfully generated")
   cat(paste(paste0(paste("File", filename), ".txt"), "successfully generated in"), getwd())
 }
 
