@@ -1,13 +1,13 @@
-#' Summary-Method for an object of class "fbinjuries"
+#' Summarize an object of class "fbinjuries"
 #'
-#' @param x an object of class "fbinjuries"
-#' @param ... ...
+#' @param object Object of class "fbinjuries"
+#' @param ... Arguments to be passed to or from other methods
 #' @export
 
-summary.fbinjuries <- function(x, ...){
-  paste(cat("Summary of sickdays caused by "), print(x$injury[!duplicated(x$injury)]))
+summary.fbinjuries <- function(object, ...){
+  paste(cat("Summary of sickdays caused by "), print(object$injury[!duplicated(object$injury)]))
   cat("\n")
-  output <- round(c(x$numberOfObservation, x$Minimum, x$firstQuartile, x$Median, x$Mean, x$thirdQuartile, x$Maximum), 2)
+  output <- round(c(object$numberOfObservation, object$Minimum, object$firstQuartile, object$Median, object$Mean, object$thirdQuartile, object$Maximum), 2)
   names(output) <- c("n", "Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.")
   print(output)
 }
