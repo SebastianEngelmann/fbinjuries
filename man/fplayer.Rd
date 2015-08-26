@@ -2,7 +2,7 @@
 % Please edit documentation in R/fplayer.R
 \name{fplayer}
 \alias{fplayer}
-\title{Find players who can play a special position...}
+\title{Find a set of players}
 \usage{
 fplayer(position, minsickdays, maxsickdays, data)
 }
@@ -19,6 +19,10 @@ fplayer(position, minsickdays, maxsickdays, data)
 \item{data}{data.frame which contains the data of fbinjuries}
 }
 \description{
-Find players who can play a special position...
+Find a set of players
+}
+\examples{
+data(fbinjuries)
+fplayer(position = "AW", minsickdays = 10, maxsickdays = 18, data = fbinjuries)
 }
 
