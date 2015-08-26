@@ -1,4 +1,4 @@
-#' Find players who can play a special position...
+#' Find a set of players
 #'
 #' @param position player position; \code{position = "TW"} (goalkeeper);
 #' \code{position = "AW"} (defense);
@@ -9,6 +9,9 @@
 #' @param data data.frame which contains the data of fbinjuries
 #' @rdname fplayer
 #' @export
+#' @examples
+#' data(fbinjuries)
+#' fplayer(position = "AW", minsickdays = 10, maxsickdays = 18, data = fbinjuries)
 
 fplayer <- function(position, minsickdays, maxsickdays, data){
 
