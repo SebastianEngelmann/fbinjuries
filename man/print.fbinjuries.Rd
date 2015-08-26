@@ -9,7 +9,7 @@
 \arguments{
 \item{x}{an object of class "fbinjuries"}
 
-\item{...}{...}
+\item{...}{Arguments to be passed to or from other methods}
 }
 \value{
 print information
