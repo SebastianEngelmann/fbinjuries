@@ -2,19 +2,29 @@
 % Please edit documentation in R/report.R
 \name{report}
 \alias{report}
-\title{Creates a report of a player.}
+\title{Creates a report of a player}
 \usage{
 report(name, data)
 }
 \arguments{
-\item{name}{name of the player.}
+\item{name}{name of the player}
 
 \item{data}{data.frame which contains the data of fbinjuries}
 }
 \value{
-A list of interesting information.
+The function \code{report} returns a list of information about the player:
+
+\code{player} name of the player
+
+\code{club} club of the player
+
+\code{position} position of the player
+
+\code{injuries} table which contains frequency of injuries
+
+\code{sickdays} total number of sick days
 }
 \description{
-Creates a report of a player.
+Creates a report of a player
 }
 

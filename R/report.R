@@ -1,8 +1,19 @@
-#' Creates a report of a player.
+#' Creates a report of a player
 #'
-#' @param name name of the player.
+#' @param name name of the player
 #' @param data data.frame which contains the data of fbinjuries
-#' @return A list of interesting information.
+#' @return The function \code{report} returns a list of information about the player:
+#'
+#' \code{player} name of the player
+#'
+#' \code{club} club of the player
+#'
+#' \code{position} position of the player
+#'
+#' \code{injuries} table which contains frequency of injuries
+#'
+#' \code{sickdays} total number of sick days
+#'
 #' @rdname report
 #' @export
 
