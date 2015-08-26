@@ -1,10 +1,13 @@
-#' Analyse of a injury
+#' Analysis of sick days caused by football injuries
 #'
-#' @param injury injury of interest
+#' @param injury Kind of injury
 #' @param data data.frame which contains the data of fbinjuries
-#' @return summary of sickdays caused by injury
+#' @return analyze returns an object of class "fbinjuries". This object contains data of sick days caused by injury.
 #' @rdname analyze
 #' @export
+#' @examples
+#' data(fbinjuries)
+#' analyze(injury = "Kreuzbandriss", data = fbinjuries)
 
 analyze <- function(injury, data){
 
@@ -14,9 +17,6 @@ analyze <- function(injury, data){
   x <- dplyr::arrange(dplyr::filter(data, injname == injury), days)
   x <- na.omit(x)
   ldays <- length(x$days)
-
-  fitln <- fitlnorm(x$days)
-
   mini <- min(x$days)
   maxi <- max(x$days)
   mu <- (1 / ldays) * sum(x$days)
@@ -47,7 +47,6 @@ analyze <- function(injury, data){
     "Maximum" = maxi,
     "numberOfObservation" = ldays,
     "data" = x,
-    "fitlognormal" = fitln,
     "injury" = x$injname
   )
   class(output) <- "fbinjuries"

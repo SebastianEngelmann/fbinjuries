@@ -2,16 +2,32 @@
 % Please edit documentation in R/mkfile.R
 \name{mkfile}
 \alias{mkfile}
-\title{Creates a textfile with a report in your current working directory.}
+\title{Creates a textfile containing R output in your current working directory.}
 \usage{
-mkfile(x, filename)
+mkfile(x, filename, setdir)
 }
 \arguments{
-\item{x}{object of class "fbinjuries"}
+\item{x}{file content}
 
 \item{filename}{filename without extension.}
+
+\item{setdir}{set path for textfile (default: current working directory)}
 }
 \description{
-Creates a textfile with a report in your current working directory.
+Creates a textfile containing R output in your current working directory.
+}
+\examples{
+string <- "Hello World!"
+mkfile(x = string, "my_file")
+
+\dontrun{
+mkfile(x = string, "my_file", setdir = "your_path")
+}
+}
+\seealso{
+\itemize{
+  \item \code{\link{getwd}} for getting working directory
+  \item \code{\link{setwd}} for setting working directory
+}
 }
 
