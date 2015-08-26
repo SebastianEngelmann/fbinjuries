@@ -1,7 +1,5 @@
 #' data set fbinjuries
 #'
-#'
-#'
 #' @format  A data frame with 7092 rows and 9 variables:
 #' \describe{
 #'    \item{leaguename}{name of the football league}
