@@ -2,7 +2,7 @@
 % Please edit documentation in R/getPercentile.R
 \name{getPercentile}
 \alias{getPercentile}
-\title{Return the percentile for the number of sickdays caused by injury}
+\title{Return the percentile for the number of sick days caused by injury}
 \usage{
 getPercentile(days, injury, data)
 }
@@ -11,12 +11,16 @@ getPercentile(days, injury, data)
 
 \item{injury}{name of the injury}
 
-\item{data}{data.frame which contains the data of fbinjuries}
+\item{data}{data frame which contains the data of fbinjuries}
 }
 \value{
-return the percentil
+return the percentile
 }
 \description{
-Return the percentile for the number of sickdays caused by injury
+Return the percentile for the number of sick days caused by injury
+}
+\examples{
+data(fbinjuries)
+getPercentile(days = 30, injury = "Muskelfaserriss", data = fbinjuries)
 }
 

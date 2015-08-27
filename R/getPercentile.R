@@ -1,10 +1,13 @@
-#' Return the percentile for the number of sickdays caused by injury
+#' Return the percentile for the number of sick days caused by injury
 #'
 #' @param days number of sick days
 #' @param injury name of the injury
-#' @param data data.frame which contains the data of fbinjuries
-#' @return return the percentil
+#' @param data data frame which contains the data of fbinjuries
+#' @return return the percentile
 #' @export
+#' @examples
+#' data(fbinjuries)
+#' getPercentile(days = 30, injury = "Muskelfaserriss", data = fbinjuries)
 
 getPercentile <- function(days, injury, data){
 
