@@ -1,7 +1,7 @@
 #' Analysis of sick days caused by football injuries
 #'
 #' @param injury Kind of injury
-#' @param data data.frame which contains the data of fbinjuries
+#' @param data data frame which contains the data of fbinjuries
 #' @return analyze returns an object of class "fbinjuries". This object contains data of sick days caused by injury.
 #'
 #' \code{Minimum} minimum sick days caused by injury
@@ -18,7 +18,7 @@
 #'
 #' \code{numberOfObservation} number of injury
 #'
-#' \code{data} subset of data.frame containing data from fbinjuries
+#' \code{data} subset of data frame containing data from fbinjuries
 #'
 #' \code{injury} name of injury
 #'

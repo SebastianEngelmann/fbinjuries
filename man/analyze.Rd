@@ -9,7 +9,7 @@ analyze(injury, data)
 \arguments{
 \item{injury}{Kind of injury}
 
-\item{data}{data.frame which contains the data of fbinjuries}
+\item{data}{data frame which contains the data of fbinjuries}
 }
 \value{
 analyze returns an object of class "fbinjuries". This object contains data of sick days caused by injury.
@@ -28,7 +28,7 @@ analyze returns an object of class "fbinjuries". This object contains data of si
 
 \code{numberOfObservation} number of injury
 
-\code{data} subset of data.frame containing data from fbinjuries
+\code{data} subset of data frame containing data from fbinjuries
 
 \code{injury} name of injury
 }
