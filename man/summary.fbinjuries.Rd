@@ -14,4 +14,9 @@
 \description{
 Summarize an object of class "fbinjuries"
 }
+\examples{
+data(fbinjuries)
+kreuzbandriss <- analyze(injury = "Kreuzbandriss", data = fbinjuries)
+summary(kreuzbandriss)
+}
 

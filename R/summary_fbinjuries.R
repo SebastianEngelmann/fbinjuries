@@ -3,6 +3,10 @@
 #' @param object Object of class "fbinjuries"
 #' @param ... Arguments to be passed to or from other methods
 #' @export
+#' @examples
+#' data(fbinjuries)
+#' kreuzbandriss <- analyze(injury = "Kreuzbandriss", data = fbinjuries)
+#' summary(kreuzbandriss)
 
 summary.fbinjuries <- function(object, ...){
   paste(cat("Summary of sickdays caused by "), print(object$injury[!duplicated(object$injury)]))
