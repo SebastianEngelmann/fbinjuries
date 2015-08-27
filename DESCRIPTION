@@ -3,6 +3,7 @@ Type: Package
 Title: football injuries
 Version: 0.1.0
 Authors@R: person("Sebastian", "Engelmann", email = "s.engelmann@fu-berlin.de", role = c("aut", "cre"))
+URL: https://github.com/SebastianEngelmann/fbinjuries
 BugReports: https://github.com/SebastianEngelmann/fbinjuries/issues
 Description: "fbinjuries is a collection of functions designed to analyze football injuries."
 License: MIT + file LICENSE
