@@ -7,16 +7,21 @@
 fplayer(position, minsickdays, maxsickdays, data)
 }
 \arguments{
-\item{position}{player position; \code{position = "TW"} (goalkeeper);
+\item{position}{player position:
+
+\code{position = "TW"} (goalkeeper);
+
 \code{position = "AW"} (defense);
+
 \code{position = "MF"} (midfield);
+
 \code{position = "ST"} (attack)}
 
 \item{minsickdays}{the number of minimal sickdays in the past}
 
 \item{maxsickdays}{the number of maximal sickdays in the past}
 
-\item{data}{data.frame which contains the data of fbinjuries}
+\item{data}{data frame which contains the data of fbinjuries}
 }
 \description{
 Find a set of players
