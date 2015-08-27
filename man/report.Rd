@@ -27,4 +27,8 @@ The function \code{report} returns a list of information about the player:
 \description{
 Creates a report of a player
 }
+\examples{
+data(fbinjuries)
+report(name = "Goetze", data = fbinjuries)
+}
 

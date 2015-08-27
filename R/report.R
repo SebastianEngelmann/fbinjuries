@@ -16,6 +16,9 @@
 #'
 #' @rdname report
 #' @export
+#' @examples
+#' data(fbinjuries)
+#' report(name = "Goetze", data = fbinjuries)
 
 report <- function(name, data){
 
