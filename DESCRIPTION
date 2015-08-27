@@ -1,6 +1,6 @@
 Package: fbinjuries
 Type: Package
-Title: football injuries
+Title: Analysis of Football Injuries
 Version: 0.1.0
 Authors@R: person("Sebastian", "Engelmann", email = "s.engelmann@fu-berlin.de", role = c("aut", "cre"))
 URL: https://github.com/SebastianEngelmann/fbinjuries
