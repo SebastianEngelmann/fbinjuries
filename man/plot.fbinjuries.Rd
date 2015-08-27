@@ -14,4 +14,9 @@
 \description{
 Plot-Method for an object of class "fbinjuries"
 }
+\examples{
+data(fbinjuries)
+kreuzbandriss <- analyze(injury = "Kreuzbandriss", data = fbinjuries)
+plot(kreuzbandriss)
+}
 

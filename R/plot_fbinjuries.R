@@ -4,6 +4,10 @@
 #' @param ... Arguments to be passed to or from other methods
 #' @rdname plot.fbinjuries
 #' @export
+#' @examples
+#' data(fbinjuries)
+#' kreuzbandriss <- analyze(injury = "Kreuzbandriss", data = fbinjuries)
+#' plot(kreuzbandriss)
 
 plot.fbinjuries <- function(x, ...){
 
