@@ -17,4 +17,9 @@ print information
 \description{
 Print-Method for an object of class "fbinjuries"
 }
+\examples{
+data(fbinjuries)
+kreuzbandriss <- analyze(injury = "Kreuzbandriss", data = fbinjuries)
+kreuzbandriss
+}
 

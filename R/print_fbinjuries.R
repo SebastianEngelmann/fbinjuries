@@ -5,6 +5,10 @@
 #' @return print information
 #' @rdname print.fbinjuries
 #' @export
+#' @examples
+#' data(fbinjuries)
+#' kreuzbandriss <- analyze(injury = "Kreuzbandriss", data = fbinjuries)
+#' kreuzbandriss
 
 print.fbinjuries <- function(x, ...){
   paste(cat("Analysis of sickdays caused by "), print(x$injury[!duplicated(x$injury)]))
