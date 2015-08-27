@@ -1,7 +1,7 @@
-#' Creates a textfile containing R output in your current working directory.
+#' Creates a textfile containing R output in your current working directory
 #'
 #' @param x file content
-#' @param filename filename without extension.
+#' @param filename filename without extension
 #' @param setdir set path for textfile (default: current working directory)
 #' @seealso
 #' \itemize{
