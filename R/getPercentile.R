@@ -30,7 +30,7 @@ getPercentile <- function(days, injury, data){
   else if(days >= max(df$sdays))
    return(1)
   else{
-   return(df$Fn[df$diff == mini])
+   return((df$Fn[df$diff == mini])[1])
   }
 }
 
