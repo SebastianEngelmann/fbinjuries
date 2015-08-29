@@ -24,7 +24,7 @@ mkfile <- function(x, filename, setdir){
   }
   sink(paste0(filename, ".txt"))
   cat("###########################################\n")
-  cat(paste("### Report ---"), date(), "###\n")
+  cat(paste("### report ---"), date(), "###\n")
   cat("###########################################\n\n\n")
   print(x)
   sink()
