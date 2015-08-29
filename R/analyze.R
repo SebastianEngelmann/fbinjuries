@@ -41,18 +41,18 @@ analyze <- function(injury, data){
   mu <- (1 / ldays) * sum(x$days)
 
   if(ldays %% 2 == 0){
-    med <- .5 * (x$days[ldays / 2] + x$days[ldays / 2 + 1])
+    med <- 0.5 * (x$days[ldays / 2] + x$days[ldays / 2 + 1])
   }else{
     med <- x$days[(ldays + 1) / 2]
   }
 
   if((ldays * 0.25) %% 1 == 0){
-    fq <- .5 * (x$days[ldays * 0.25] + x$days[ldays * 0.25 + 1])
+    fq <- 0.5 * (x$days[ldays * 0.25] + x$days[ldays * 0.25 + 1])
   }else{
     fq <- x$days[ceiling(ldays * 0.25)]
   }
   if((ldays * 0.75) %% 1 == 0){
-    tq <- .5 * (x$days[ldays * 0.75] + x$days[ldays * 0.75 + 1])
+    tq <- 0.5 * (x$days[ldays * 0.75] + x$days[ldays * 0.75 + 1])
   }else{
     tq <- x$days[ceiling(ldays * 0.75)]
   }
