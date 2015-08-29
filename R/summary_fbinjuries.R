@@ -9,7 +9,7 @@
 #' summary(kreuzbandriss)
 
 summary.fbinjuries <- function(object, ...){
-  paste(cat("Summary of sickdays caused by "), print(object$injury[!duplicated(object$injury)]))
+  paste(cat("summary of sickdays caused by "), print(object$injury[!duplicated(object$injury)]))
   cat("\n")
   output <- round(c(object$numberOfObservation, object$Minimum, object$firstQuartile, object$Median, object$Mean, object$thirdQuartile, object$Maximum), 2)
   names(output) <- c("n", "Min.", "1st Qu.", "Median", "Mean", "3rd Qu.", "Max.")
