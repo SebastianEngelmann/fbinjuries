@@ -11,7 +11,7 @@
 #' kreuzbandriss
 
 print.fbinjuries <- function(x, ...){
-  paste(cat("Analysis of sickdays caused by "), print(x$injury[!duplicated(x$injury)]))
+  paste(cat("analysis of sickdays caused by "), print(x$injury[!duplicated(x$injury)]))
   cat("\n number of observation:\n")
   print(x$numberOfObservation)
   cat("\n Minimum:\n")
